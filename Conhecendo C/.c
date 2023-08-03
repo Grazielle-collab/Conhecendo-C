@@ -14,4 +14,9 @@ printf("o valor encontrado foi %s",valor1); // Efetua-se a escrita de uma série
 scanf("expressão de controle", lista de argumentos);
 scanf("%d",&valor);
 
-main( )
+main() {
+    int valor;
+    printf("Digite um número");
+    scanf("%d",&valor);
+    printf("\n o número é %d",valor);
+}
