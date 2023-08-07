@@ -21,3 +21,12 @@ int main(int argc, char** argv) {
 
     return 0;
 }
+
+// Comandos de saída de dados]
+// As informações, msg e conteúdo de variáveis são enviadas para o usuario visualiá-las;]
+// PRINTF ("expressão de controle", listas de argumentos);] 
+//
+// Comando de entrada de dados]
+// As informações dos usuarios são transferidas para variavel do programa;]
+// SCANF ("expressão de controle", lista de argumentos);
+// EX: scanf ("%d", &valor;)

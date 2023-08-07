@@ -4,6 +4,9 @@ void main() {
     int valor1, valor2, soma;
 }
 
+// Comandos de saída de dados]
+// As informações, msg e conteúdo de variáveis são enviadas para o usuario visualiá-las;]
+// PRINTF ("expressão de controle", listas de argumentos);] 
 printf("expressão do controle", listas de argumentos);
 printf("o valor encontrado foi %c",valor1); // Permite a escrita de apenas um caractere]
 printf("o valor encontrado foi %d",valor1); // Permite a escrita de números inteiros decimais]
@@ -13,6 +16,12 @@ printf("o valor encontrado foi %s",valor1); // Efetua-se a escrita de uma série
 
 scanf("expressão de controle", lista de argumentos);
 scanf("%d",&valor);
+
+//
+// Comando de entrada de dados]
+// As informações dos usuarios são transferidas para variavel do programa;]
+// SCANF ("expressão de controle", lista de argumentos);
+// EX: scanf ("%d", &valor;)
 
 main() {
     int valor;
