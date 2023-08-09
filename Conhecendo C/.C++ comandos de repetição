@@ -1,0 +1,86 @@
+// While 
+// Comandos serão repetidamente executados enquanto uma condição
+// verdadeira for verificada, somente após a sua negativa essa condição
+// será interrompida.
+// Esse comando vai se repetir até que seja falsa.
+
+while (valor < 10)
+{
+    printf("valor = %d, valor");
+    valor ++;/* code */
+}
+
+// while (condição) {
+    // Comandos;
+// }
+
+// loop
+// ° Contador - é utilizado para controlar as repetições;
+// ° Incremento e decremento - trabalha o numero do contador, 
+//seja aumento ou diminuido.
+// ° Acumulador - irá somar as entradas de dados de cada interção da
+//repetição, gerando um somatório a ser utilizado quanto da saída da repetição.
+// ° Condição de parada - utilizada para determinar o momento de parar
+// quando não se tem um valor exato desta repetição.
+ 
+//OBS.: A CONDIÇÃO tem que estar ligada ao CONTADOR
+
+// DO-WHILE
+
+// Analisa a condição ao final do laço, ou seja, executados
+//antes do teste de condição.
+
+do 
+{
+  printf("valor = %d", valor);
+
+  valor ++;
+} 
+while (valor <10);
+
+// um teste no caso de uma SORVETERIA
+
+// Elabrar um programa em que os  clientes consigam ver os valores
+//nutricionais de cada sorvete que gostariam de consumior.  
+ 
+ #include <iostream> 
+ 
+ int main(int argc, char** argv) {
+    int i;
+
+    do
+    {
+        printf("\n Digite um numero do sabor \n");
+
+        printf("\t (1) ...flocos \n");
+        printf("\t (1) ... morango \n");
+        printf("\t (1) ...leite condesado \n");
+
+        scanf("%d," &i);
+    }while ((i<1) || (i>3));
+    {
+        switch (i){
+            case 1:
+                printf("\t\ Vc escolheu flocos");
+                break;
+
+                case 2: 
+                printf("\t\t Vc escolheu morango");
+                break;
+
+                case 3: 
+                printf("\t\t Vc escolheu leite condesado");
+                break;
+
+                
+
+        }
+        {
+        
+        default:
+            break;
+        }
+    }
+    
+    return 0;
+ } 

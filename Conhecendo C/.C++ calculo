@@ -1,0 +1,46 @@
+// APRESENTAÇÃO DE TABELA 
+
+// DESCONTO INSS
+
+// SALÁRIO DE CONTRIBUIÇAÕ (R$) | ALÍQUOTA / INSS
+// até 1.693,72                 | 8%  aqui não tem desconto
+// de 1.693,73 até 2.82.90      | 9%  daqui em diante ja tem desconto
+// de 2.822,91 até 5.646,80     | 11%
+// Acima de 5.646,80            | R$ 621.04 (invariavelmente)
+
+// Nessa questão problema temos saber quais são os intervalos
+// temos que fazer um if, e o if é o mais indicado para essa analisare 
+ 
+#include <iostream>
+
+/* run this program using console pause or add your own getch,*/
+
+// OBS: o It main ja cria a inicial abixo!
+
+int main(int argc, char** argv) {
+    float salario, inss, ir, sal_liquido;
+
+    printf("Digite seu salário bruto");
+    scanf("%f, &salario");
+
+    if(salario <= 1.693,72)
+    {
+        inss =salario *0.08;
+    }
+    else
+    if(salario >= 1.693.93 && salairo <=2.822,90)
+    {
+        inss = salario * 0.09;
+    }
+
+    sal_liquido = (salario - inss) -ir;
+
+    printf("\n Desconto Inss: %f\n", inss)
+
+    printf("\nSalario liquido %2.f\n, salario_liquido");
+
+    return 0;
+}
+// concluir o codigo fazendo uma tabela inicial 
+// ela so explanou o IF e o ELSE
+
