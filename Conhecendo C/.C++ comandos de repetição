@@ -217,3 +217,49 @@ int matriz[3][3];
 //13. getch;
 //14.return 0;
 //15. }
+
+//  OUTRO EXEMPLO
+
+#include <iostream>
+
+int main(int argc, char** argv) {
+
+    int linha, coluna;
+    int matriz[2][2];
+
+    for(linha=0; coluna <2; linha++)
+    {
+        for(coluna=0; coluna <2; coluna++)
+        {
+            printf("Digite os valores da matriz para a linha %d, coluna %d: ",linha +1 coluna)
+            scanf("%d", &matriz[linha][coluna]);
+        }
+    }
+       
+       for(linha=0; linha <= 2; linha++){
+        for(coluna=0; coluna <2; coluna++);
+            printf("%d \t", matriz[linha][coluna]);
+       printf("veja a sua matriz"); 
+       printf("\n\n");  
+       }
+       system("pause");
+       return 0;
+}
+
+// Uma matriz aceita diversos tipos de !variavei! de (DADOS QUE DEVEM SER IGUAI)
+// Não é obrigatorio que todas as posições sejam ocupadas de um 
+//vetor ou de uma matriz.
+// O for busca repetir uma informação por um número fixo de vezes.
+
+// RECAPITULANDO 
+
+// if;
+// if-else
+// switch;
+// Estrutura condicional encadeada;
+// while;
+// do-while;
+// for;
+// Variáveis;
+// vetores;
+// matrizes;
