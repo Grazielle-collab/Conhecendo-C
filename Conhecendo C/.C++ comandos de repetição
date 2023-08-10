@@ -2,6 +2,9 @@
 // Comandos serão repetidamente executados enquanto uma condição
 // verdadeira for verificada, somente após a sua negativa essa condição
 // será interrompida.
+// OBS.: No while os comandos serão repetidamente execultados
+//enquanto uma condição verdadeira for verificada, somente após a sua
+//negativa essa condição será interrompida.
 // Esse comando vai se repetir até que seja falsa.
 
 while (valor < 10)
@@ -24,11 +27,13 @@ while (valor < 10)
 // quando não se tem um valor exato desta repetição.
  
 //OBS.: A CONDIÇÃO tem que estar ligada ao CONTADOR
+// Todo loop deve ter uma variável de controle;
 
 // DO-WHILE
 
 // Analisa a condição ao final do laço, ou seja, executados
 //antes do teste de condição.
+//OBS.: 
 
 do 
 {
@@ -56,12 +61,12 @@ while (valor <10);
         printf("\t (1) ... morango \n");
         printf("\t (1) ...leite condesado \n");
 
-        scanf("%d," &i);
+        scanf("%d", &i);
     }while ((i<1) || (i>3));
     {
         switch (i){
             case 1:
-                printf("\t\ Vc escolheu flocos");
+                printf("\t\t Vc escolheu flocos");
                 break;
 
                 case 2: 
@@ -71,9 +76,7 @@ while (valor <10);
                 case 3: 
                 printf("\t\t Vc escolheu leite condesado");
                 break;
-
                 
-
         }
         {
         
@@ -84,3 +87,133 @@ while (valor <10);
     
     return 0;
  } 
+
+// Quando vc quer uma quantidade de repetições se ultiliza o for
+
+// for
+
+// Repetir uma informação por um número fixo de vezes.
+
+// for (inicialização; condição final; incremento)
+//{
+//  comandos;
+//}
+
+for (int x=0; x < 10; x++)
+{
+    printf("%d", x);
+}
+ //
+
+ #include <iostream> 
+    
+    int main (int argc, char** argv) {
+        int contador
+
+        printf("\n Digite um valor");
+        scanf("%d", &contador);
+
+        for (contador; contador >=1; contador--)
+        {
+            printf("%d ", contador);
+        }
+
+    return 0;
+ }
+
+ // VETORES
+
+ //° Vetor é um tipo especial de variável;
+ //° Armazena diversos valores "ao mesmo tempo",
+ //usando um mesmo endereço na memòria;
+ // OBS.: Vc que vai determinar a quantidade de valores que ele vai armazenar 
+ // mas esses valores tem que ser do mesmo tipo.
+ //Exemplo: se eu quero valores do tipo inteiro tera que ser só inteiros 
+ //se eu quiser armazenas tipo flout sera apenas flout.
+ //° Sintaxe: *tipo variavel* [n]
+ // no sintaxe o TIPO (é aquele que vai declarar se é int ou se é flout ou se é char)
+ //a VARIAVEL (será o nome dela)
+ // [N] (será penasado na quantidade de valores que irei querer)
+ // EXEMPLO: EU QUERO QUE ESSE VETOR TENHA 10 VALORES 
+ //idade            Valor da idade -> Depende do índice
+ //[10][18][32]     
+//   |   |   |       idade[0] = 10
+//   0   1   2       idade[1] = 18
+// Índices 0,1,2     idade[2] = 32
+
+// OBS.: O indice do vetor sempre vai começar com 0
+// INDICE: é N-1
+ 
+
+//         OUTRO TIPO DE VARIAVEL É A MATRIZES
+//Matrizes
+
+// Arranjos de duas ou mais dimensões. Assim como nos vetores, todos
+//os elementos de uma matriz são do mesmo tipo, armazenando informações
+//semanticamente semelhantres.
+// Sintaxe: tipo variável [m][n]
+ // no sintaxe o TIPO (é aquele que vai declarar se é int ou se é flout ou se é char)
+ //a VARIAVEL (será o nome dela)
+ //[M]= o nome da parte de linhas
+ //[N]= seria as nossas colunas
+ // OBS.: ELA PODE TER LINHAS E COLUNAS DO MESMO VALORES OU NÃO. VC QUE VAI DETERMINAR A SOLU~ÇÃO DO PROBLEMA
+
+// Nota 1  Nota 2
+//coluna 0 coluna 1
+    //       //
+// Aluno 1 linha 0 -> 10,0 | 8,5
+// Aluno 2 linha 1 ->  5,5 | 2,7
+// Aluno 3 linha 2 ->  4,0 | 10,0
+
+// Exemplo: Se eu analisar qual Aluno esta na linha [1] e na coluna [0]
+//que seria 5,5 | 2,7
+
+//    OUTROS
+// Variáveis compostas
+//° Em qualquer variável composta, o índice começa por zero, então, 
+//em uma matriz, o primeiro espaço para armazenamento é sempre (0,0),
+//ou seja, índice 0 tanto para linha como para coluna.
+//° Não é obrigatorio que todas as posições sejam ocupadas, sendo possível
+//declarar uma matriz com 10 linhas (ou colunas) e usar somente uma.
+// Obs.: Sempre antes de alocar linhas e colunas lembrar dos gastos com a mesmoria!!!
+
+int matriz[3][3];
+
+       for (linhai= 0; linha <3; linha++)
+    {
+       for (coluna= 0; coluna<3; coluna++)
+
+    {
+        
+       printf("Digitar os valores da matriz para: linha %d,
+       coluna %d: ", linha+1);
+
+       scanf("%d", &matriz[linha][coluna]);
+
+
+    }
+    }
+
+    // Exercicios
+
+// Um programa em linguagtem C para transformar o sobrenome digitato
+// dos alunos em letras maiúsculas, o programa as transformará
+// automaticamente em maiúsculas.
+ 
+// Nesse caso temos que analisar o nome e comparar as variáveis
+
+// 1. #include <stdio.h>
+// 2. #include <stdlib.h>
+// 3. #include <ctype.h>
+// 4. int main ( )
+// 5. {
+// 6. char nome[30];
+// 7. int i;
+// 8. printf("Digite o sobrenome do aluno ou aluna:\n")
+// 9. gets(nome);
+//10. for(i=0; nome[i]!=' '; i++)
+//11. nome[i] = toupper(nome[i]);
+//12. printf("\n\nSobrenome convertido: %s\n\n",nome);
+//13. getch;
+//14.return 0;
+//15. }
