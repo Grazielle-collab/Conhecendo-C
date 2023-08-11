@@ -1,4 +1,4 @@
-// Algoritimos
+ Algoritimos
 
 //uma sequencia ordenada de passos que deve ser seguida para a realização de uma tarefa;
 // ENTRADA -> PROCESSAMENTO -> SAÍDA
@@ -10,14 +10,14 @@
 //° Deve ser claro e objetivo; ou seja, sempre CLARO, OBJETIVO. 
 //temos que ter uma programação limpa possivel sem gambiarras nos algoritimos
 
-// Algoritimos
+ Algoritimos
 
 // Formas de representação:
 // ° Decrição Narrativa;
 // ° Fluxograma;
 // ° Pseudocódigo;
 
-// Descrição Narrativa
+ Descrição Narrativa
 
 // Utiliza a linguagem natural;
 // Receita do bolo:
@@ -31,7 +31,7 @@
 
 // OBS.: nem sempre eu tenho um jeito de fazer o bolo a mesma coisa dos algoritimos que tem diversas VARIAÇÕES
 
-// Descrição Narrativa
+ Descrição Narrativa
 
 // Receita do bolo 2:
 // 1. Misturar os ingredientes 
@@ -45,7 +45,7 @@
 
 // OBS.: REPARA QUE MOSTRA QUE TENHO UMA CONDIÇÃO DIFERENTE NESSE SEGUNDO PASSO 
 
-// Descrição Narrativa
+ Descrição Narrativa
 
 // Vantagem:
 // ° O uso da linguagem natural;
@@ -54,19 +54,19 @@
 // ° Imprecisão; ou seja, ela pode traser um puco de subjetividade
 // ° Desvantagem; ela não é tão metodologico e é imprecisa
 
-// Fluxograma
+ Fluxograma
 
 // ° Representação gráfica; ou seja, iremos desenhar esse nosso algoritimo
 // ° Cada forma geométrica define uma função genérica;  
 // ° As formas geométricas são ligadas por flechas que indicam o fluxo da execução;
 
-// Pseudocódigo
+ Pseudocódigo
 
 // ° Assemlha-se a forma em que os programas são escritos;
 // ° Portugues estruturado; obs: estuturado é diferente de linguagem estruturado
 // ° A intenção é chegar na resolução do problema;
 
-// Exemplo: 
+ Exemplo: 
 
 // algoritimo "Calcula Media"
 // var
@@ -83,28 +83,28 @@
 // OBS.: VAR; ele vai mostrar as varaiaveis que irei ter no meu problema
 // o que seria VARIAVEL: ela é uma locação de memoria. tipo para nota 1 e 2 e para media
 
-// Variáveis
+ Variáveis
 
 // Um local que armazena um conteúdo especifico na memória principal do computador
 
-// VARIÁVEL | CONTEÚDO
+    VARIÁVEL | CONTEÚDO
 // Nome        Grazielle nesse caso eu guardei CARACTERES, simbolos e letras
 // Idade          30     nesse caso eu guardei UM VALOR NUMERICO 
 // Telefone  9999-9999    nesse caso eu guardei UM VALOR NUMERICO
 
-// Tipos de Dados
+ Tipos de Dados
 
 // Especifica as características, ou seja, os valores e operações
 //possíveis de serem utilizadas com um dado desse tipo
 
-// TIPO       |       DESCRIÇÃO
+   TIPO       |       DESCRIÇÃO
 
 // Inteiro    | Representa valores inteiros. Ex: 18; 300; -100; ou seja, NEGATIVOS E POSITIVOS
 // Real       | Valores reais (decimal). Ex.: 5.5; 899.3; -22.22; ou seja, os valores que tem a casa decimal as ;;;
 // Caractere  | Sequencia de um ou mais caracteres. Ex.: Leo; A; as palavras
 // Lógico     | Valores lógico: Verdadeiro, Falso. tem os valores logicos chamado BOOL
 
-// REGRAS DE VARIÁVEIS
+ REGRAS DE VARIÁVEIS
 
 // Identificação única;
 // Nomes para as variáveis significativos; ou seja, nome, endereço
