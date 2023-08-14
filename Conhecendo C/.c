@@ -104,7 +104,7 @@
 // Caractere  | Sequencia de um ou mais caracteres. Ex.: Leo; A; as palavras
 // Lógico     | Valores lógico: Verdadeiro, Falso. tem os valores logicos chamado BOOL
 
- REGRAS DE VARIÁVEIS
+// REGRAS DE VARIÁVEIS
 
 // Identificação única;
 // Nomes para as variáveis significativos; ou seja, nome, endereço
@@ -154,7 +154,7 @@ Linguagem C
 
 Bibliotecas 
 
-// como funcionas as bibliotecas e quas as funções
+// como funcionas as bibliotecas e quais as funções
 
 // As primeiras linhas de programação são definidas pelas
 //bibliotecas.
