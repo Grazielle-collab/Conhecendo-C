@@ -124,7 +124,7 @@ Função malloc ()
 //se der errado vai dar NULL.
 
 
-Escopo e Passagem de Paametros
+Escopo e Passagem de Parametros
 
 Escopo 
 
@@ -256,7 +256,7 @@ Função Recursiva
 
 void main() {
     //comandos
-    fincaoRecursiva():
+    funcaoRecursiva():
     // A sua funçaoé chamar ela mesma
     //comandos
 }
@@ -465,9 +465,51 @@ float calcularRaiz (float n, float RaizAnt)
 
 }
 
+Exemplo:
 
+// Irei inserir valores em um vetror e mostrar esse vetor
+//com os valores dobrados
 
+#include <iostream>
 
+void inserir(int a[])
+{
+    int i;
+    for(i=0; i<3; i++)
+    {
+    printf("\n Digite o valor %d \t", i);
+    scanf("%d", &a[i]);
+    }
+}
+void imprimir(int b[])
+{
+    int i;
+    for(i=0; i<3; i++)
+
+{
+    printf("\n numeros[%d] = %d", i, (2*b[i]));
+}
+}
+int main(int argc, char**) {
+
+    int numero[3];
+    printf("\n Preenchendo o vetor : \n");
+    inserir(numero);
+
+    printf("\n valor final");
+    imprimir(numero);
+
+    return 0;
+}
+
+Qundo usar a recursividade :
+
+// Se a recursividade não foi bem ultilizada ela ira causar transtornos,
+//como o não funcionamento do codigo e por visto que pode ter um estouro de pilha.
+
+ // Pontos que posso presumir que será bem empregada e deixar o código mais inchuto no que ajuda a ter um programa muito mais claro 
+ // Outro ponto, é que eu posso usar a recursiveidade quando a camada de para ela 
+ //não vai ser muito grande. 
 
 
 
