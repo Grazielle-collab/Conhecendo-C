@@ -61,6 +61,95 @@ Struct
     
   }
 
+  Lista Ligada
+
+  // ° Etrutura de dados linear e dinamica;
+  // dinamica da para incerir dados e resolver a hora que eu desejar.
+  // ° Cadaelemento da sequencia é armazenado em uma célula da lista;
+  //celula da lista eu declaro os valores na Struct, ou seja, o que eu declarar na lista estara na minha Struct.
+
+
+  // prim 
+  // info1 --> info2 --> info3 
+  
+  //exemplo: 
+
+  // cada valor no info é uma celula.
+  // mas algo muito importante se tratando de lista é um quadradinho que esta sendo representado 
+ //que se denomina em NÓ.
+ //PQ NÓ? uma celula esta apontando para outra no que gera um 
+ //encadeamento desses valores. Ou seja, um NÓ que chama o outro.
+ // e essa sequencia permite que adicionamos valores.
+
+ // Como declarar esse valor 
+
+ struct lista {
+    int info;
+    struct lista* prox;
+ };
+ typedef struct lista Lista;
+ 
+   struct alunos {
+    char nome[25];
+    struc alunos* prox;
+   };
+   typedef struct alunos classe;
+
+   // OBS.: A lista é uma das mais complexas das estrutura de dados que temos
+   //e ela tem alguns passos que nós conseguimos montar ela
+
+   //Toda vez que tratar de uma estrutra de NÓ, teremos que inicialisar
+   //pq toda struct tem uma inicialização 
+
+   // Quais os passos para criar a lista 
+
+// ° Criação ou definição da estrutura de uma lista.
+// ° Inicialização.
+// OBS.: Como estamos trabalhando com um ponteiro e com essa
+//inicialização sempre será em NULL.
+// ° Inserção com base em um endereço como referencia.
+// ° Alocação de um endereço de nó para inserção na lista.
+// ° Remoção do nó com base em um endereço como referencia. 
+// ° Deslocamento do nó removido da lista. OBS; se esquesermos de remover acabamos ocupando memoria 
+
+Lista* inicializa (void)
+{
+    return NULL;
+}
+int main() {
+Lista* listaFinal;
+listaFinal = inicializar();
+listaFinal = inserir(listaFinal, 13);
+listaFinal = inserir(listaFinal, 56);
+}
+
+  Operações com Lista Ligadas Inserção.
+
+ // A lista não tem uma regra de onde inserir um elemento. 
+ // Então podemos inserir ele no inicio, meio e fim. Nesse caso complica um pouco.
+ //Se a logica permite essas tres implementações teremos que cuidar saparadamente.
+
+Adicionar elementos na lista 
+
+// ° Para inserirmos um elemento na lista ligada, é necessario alocarmos o 
+//espaço na memória;
+// ° Atualizar o valor do ponteiro;
+
+ 
+ Posição do inserção 
+
+ // ° Final da lista;
+ // ° Primeira posição; 
+ // ° No meio da lista;
+
+ Lista* inserir (Lista* l, int i) {
+    Lista* novo = (Lista*) malloc(sizeof(Lista));
+    novo -> info = i;
+    novo -> prox = l;
+    return novo;
+ }
+
+
 
 
 
