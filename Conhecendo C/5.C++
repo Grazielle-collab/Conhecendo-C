@@ -142,6 +142,8 @@ Adicionar elementos na lista
  // ° Primeira posição; 
  // ° No meio da lista;
 
+Lista inserir
+
  Lista* inserir (Lista* l, int i) {
     Lista* novo = (Lista*) malloc(sizeof(Lista));
     novo -> info = i;
@@ -150,8 +152,40 @@ Adicionar elementos na lista
  }
 
 
+Lista inserir posisão 
 
+Lista* inserirPosição(Lista*l,int post, int v){
+  int cont = 1;
+  Lista *p = l;
+  Lista* novo = (Lista*)malloc(Lista);
+  while(cont != post){
+    p = p -> prox;
+    cont++;
+  }
+}
 
+{
+  novo -> info = v;
+  novo -> prox = p -> prox;
+  p -> prox = novo;
+  return l;
+}
 
+Inserir no fim da Lista
+
+lista* inserirFim(Lista* l, int v){
+  Lista *p = l;
+  Lista* novo = (Lista*)malloc(sizeof(Lista));
+  while (p -> prox != NULL){
+    P = P -> PROX;
+    CONT++;
+  }
+  novo -> info = v;
+  novo -> prox = p -> prox;
+  p -> prox = novo;
+  retur l;
+}
+
+Operações nas Listas ligadas 
 
 
