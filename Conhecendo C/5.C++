@@ -188,4 +188,82 @@ lista* inserirFim(Lista* l, int v){
 
 Operações nas Listas ligadas 
 
+Remover o elemento da lista: 
 
+// Não precisa ficar fazendo remoções das listas 
+// BOS.: Pode remover uma que abrange as tres 
+
+Exemplo:
+
+Adicionar elementos na lista 
+
+ lista* remover (lista* I, int v) {
+  Lista* anterior = NULL;
+  Lista* p = l;
+  while (p != NULL && P -> info != v) {
+    anterior = p;
+    p = p -> prox; 
+  }
+
+  if (p == NULL)
+  return l; 
+
+  if (anterior == NULL) {
+    l = p -> prox; 
+  } else {
+    anterior -> prox = p -> prox;
+  }
+  return l;
+ }
+
+ // OBS.: Não remover um elemento em uma lista, nós acabamos fazendo apenas uma que abrange as tres 
+ // com a condição de ver se o prox é nulo veremos tanoto no elemento 
+ //do meio quanto no final. 
+
+ exemplo:
+ // Se eu for remover o do meio esse meu anterior vai apontar para o 
+ //proximo e não mais para ele.
+
+ Outras operções na lista ligada
+
+ // ° Percorrer a lista ligada;
+ // ° Saber quaiselementos fazem parte da estrutura de dados;
+ // ° Verificar se um elemento se encontra na lista ligada 
+
+ Imprimir
+
+ void imprimir (lista* l) {
+  Lista* p;
+  printf("Elemento:\n"):
+  for (p = l; p != NULL; p = p -> prox) {
+    printf("%d ->", p -> info);
+  }
+ }
+
+ Lista buscar 
+
+ Lista* buscar(Lista* l, int v){
+  Lista* p;
+  for (p = l; p != NULL; p = p -> prox) {
+    if (p -> info == v)
+    return p;
+  }
+  return NULL;
+ }
+
+ Na pratica 
+
+ #include <iostream>
+ #include <studio.h>
+ #include <stdlib.h> 
+
+ struct Node 
+ {
+  int dado;I 
+  struct Node *next;
+ }
+
+ void insere_inicio(struct Node** inicio_ref, int new_dado)
+ {
+  
+ }
