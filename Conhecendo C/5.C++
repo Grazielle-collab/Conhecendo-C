@@ -251,19 +251,110 @@ Adicionar elementos na lista
   return NULL;
  }
 
- Na pratica 
+Pilha
 
- #include <iostream>
- #include <studio.h>
- #include <stdlib.h> 
+// Quando se tratamos de pilha sempre tiramos o primeiro elemento 
+// Qunado inserir algo na prilha sempre irá no topo
 
- struct Node 
- {
-  int dado;I 
-  struct Node *next;
- }
+// São estruturas de dados do tipo LIFO (last-in first-out), onde o
+//primeiro a ser retirado.
 
- void insere_inicio(struct Node** inicio_ref, int new_dado)
- {
-  
- }
+// OBS.: A pilha segue uma regra totalmente diferente da lista
+
+Duas opções basicas:
+
+// ° Empilhar um elemento (push())
+// ° Desempilhar um elemento (pop())
+
+// Adicionar um push 36 , push 7 , pop , push 23 , pop
+
+struct Pilha {
+
+  int topo;
+  int capacidade;
+  float* proxElem;
+};
+
+struct Pilha minhaPilha;
+
+void cria_pilha(struct Pilha *p, int c ){
+  p -> proxElem = (float*) malloc (c* sizeof(float));
+  p -> topo =1;
+  p -> capacidade = c;
+}
+
+void push_pilha(struct Pilha *p, float v){
+  p -> topo++;
+  p -> proxElem [p -> topo] = v;
+}
+
+float pop_pilha (struct Pilha *p){
+  float aux = p -> proxElem [p -> topo];
+  p -> topo--;
+  return aux;
+}
+
+
+Fila 
+
+// São estruturas de dados do tipo FIFO(first-in first-out), onde
+//o primeiro elemento a ser inserido, será o primeiro a ser
+//retirado, ou seja, adiciona-se itens no fim e remove-se do início.
+
+Passos para a criação de uma Fila:
+
+// ° criar uma fila vazia;
+// ° inserir elemento no final; 
+// ° retirar um elemento do início;
+// ° verificar se a fila está vazia;
+
+#define N 100
+
+struct fila {
+  int n;
+  int ini;
+  char vet[N];
+};
+
+tupedef struct fila Fila;
+
+Fila* inicia_fila (void){
+  Fila* f = (Fila*) malloc(sizeof(Fila));
+  f -> n = 0;
+  f ->  ini = 0;
+  return f;
+
+}
+
+void inserir_fila (Fila* f, char elem){
+  int fim;
+  if (f -> n == N){
+    printf("A fila está cheia \n");
+    exit(1);
+  }
+
+  fim = (f -> ini + f -> n)%N;
+  f -> vet[fim] = elem; 
+  f -> n++;
+}
+
+float remove_fila (Fila* f){
+  char elem;
+  if (fila_vazia(f)){
+    printf("A Fila esta vavia\n");
+    exit(1);
+  }
+
+  elem = f -> vet[f -> ini];
+  f -> ini = (f -> ini + 1) % N;
+  f -> n--;
+
+  return elem;
+}
+
+Lista 
+
+// Exemplo: um cliente pediu para fazewr um programa e que insira 
+//alguns elementos na lista. produtos
+
+
